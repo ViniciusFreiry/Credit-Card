@@ -13,7 +13,7 @@ public class CreditCard {
     }
 
     public boolean doBuy(Buy buy) {
-        if (balance > buy.getPrice()) {
+        if (balance >= buy.getPrice()) {
             balance -= buy.getPrice();
             buys.add(buy);
             return true;
